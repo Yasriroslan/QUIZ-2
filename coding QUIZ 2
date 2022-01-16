@@ -1,0 +1,74 @@
+package QUIZ2;
+
+import java.util.Scanner;
+
+public class question1 {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan=new Scanner(System.in);
+		
+		double sal,sal1,sal2,sal3;
+		
+		int yr,yr1,yr2,yr3;
+		
+		double bonussal;
+		
+		System.out.println("\nENTER YOUR SALLARY: ");
+		sal=scan.nextDouble();
+		
+		System.out.println("\nHOW MUCH YEARS SERVICES: ");
+		yr=scan.nextInt();
+		
+		if(yr>5) {
+			bonussal=1.05*sal;
+			System.out.println("\nYOUR BONUS IS: "+bonussal);
+			
+		}else {
+			System.out.println("\nYOUR DINT PASS YOUR BONUS KPI ");
+		}
+		System.out.println("\n**** YOUR BONUS KPI CALCULATION***** ");
+		System.out.println("\nPLEASE ENTER YOUR SALLARY: ");
+		sal1=scan.nextDouble();
+		
+		System.out.println("\nPLEASE ENTER YOUR YEARS SERVICES: ");
+		yr1=scan.nextInt();
+		
+		System.out.println("\nPLEASE ENTER YOUR SALLARY: ");
+		sal2=scan.nextDouble();
+		
+		System.out.println("\nPLEASE ENTER YOUR YEARS SERVICES: ");
+		yr2=scan.nextInt();
+		
+		System.out.println("\nPLEASE ENTER YOUR SALLARY: ");
+		sal3=scan.nextDouble();
+		
+		System.out.println("\nPLEASE ENTER YOUR YEARS SERVICES: ");
+		yr3=scan.nextInt();
+		
+		if(sal1>sal2&&sal1>sal3) {
+			System.out.println(sal1);
+		}
+		else if(sal2>sal1&&sal2>sal3){
+			System.out.println(sal2);
+			
+		}else if(sal3>sal1&&sal3>sal2){
+			System.out.println(sal3);
+		}
+		
+		if(yr1>yr2&&yr1>yr3) {
+			System.out.println(yr1);
+		}
+		
+		else if(yr2>yr1&&yr2>yr3){
+			System.out.println(yr2);
+			
+		}else if(yr3>yr1&&yr3>yr2){
+			System.out.println(yr3);
+		}
+		
+		}
+	
+	}
